@@ -3,10 +3,15 @@
 require "time"
 require "fileutils"
 
-module DatabaseBackup
+module RunDatabaseBackup
   # Class to backup MongoDB
   # Description: This class is responsible for backing up MongoDB databases
-  # Example: DatabaseBackup::Mongo.new(uri: 'mongodb://localhost:27017', database_name: 'my_database', backup_directory: '/tmp').dump
+  # Example:
+  # RunDatabaseBackup::Mongo.new(
+  #  uri: 'mongodb://localhost:27017',
+  #  database_name: 'my_database',
+  #  backup_directory: '/tmp'
+  # ).dump
   class Mongo
     # @param uri [String] MongoDB URI
     # @param database_name [String] Database name
@@ -15,7 +20,7 @@ module DatabaseBackup
       @uri = uri
       @database_name = database_name
       @backup_directory = backup_directory
-      @file_path = "#{@backup_directory}/#{@database_name}-#{Time.now.strftime('%Y%m%d%H%M%S')}.gz"
+      @file_path = "#{@backup_directory}/#{@database_name}-#{Time.now.strftime("%Y%m%d%H%M%S")}.gz"
     end
 
     # Dump MongoDB database

@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in database_backup.gemspec
+# Specify your gem's dependencies in run_database_backup.gemspec
 gemspec
 
 gem "rake", "~> 13.0"

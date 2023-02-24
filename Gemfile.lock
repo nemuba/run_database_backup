@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    database_backup (0.1.0)
-      rails (>= 5.2)
+    run_database_backup (0.1.0)
+      rails
       rake (~> 13.0)
 
 GEM
@@ -111,6 +111,8 @@ GEM
     nokogiri (1.14.1)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
+    nokogiri (1.14.1-x86_64-linux)
+      racc (~> 1.4)
     parallel (1.22.1)
     parser (3.2.1.0)
       ast (~> 2.4.1)
@@ -189,10 +191,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  database_backup!
   rake (~> 13.0)
   rspec (~> 3.0)
   rubocop (~> 1.21)
+  run_database_backup!
 
 BUNDLED WITH
    2.4.7

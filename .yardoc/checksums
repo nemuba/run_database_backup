@@ -1,0 +1,6 @@
+lib/run_database_backup.rb b9a13baa29e2d696fc901879aca918eb797d58ef
+lib/run_database_backup/mongo.rb ad3a3fc76e219f6e64d9e759ac7912f94623c490
+lib/run_database_backup/mysql.rb e895df934b6b2db7325d7d99cabb1f629229f6f9
+lib/run_database_backup/tasks.rb 613fc6545b9cb8edcaa1591041bc93216171d14d
+lib/run_database_backup/version.rb 251f6a4b5a0d4443784e78b20208279ee28312d5
+lib/run_database_backup/postgresql.rb 949829b780dff0cbeff0e255158575b038dcb69b

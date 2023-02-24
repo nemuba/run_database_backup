@@ -1,4 +1,4 @@
-# DatabaseBackup
+# RunDatabaseBackup
 
 This gem provides rake tasks to backup different types of databases, including MongoDB, Postgres, and MySQL.
 
@@ -7,13 +7,13 @@ This gem provides rake tasks to backup different types of databases, including M
 Install the gem and add to the application's Gemfile by executing:
 
 ```bash
-  bundle add database_backup
+  bundle add run_database_backup
 ```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
 ```bash
-  gem install database_backup
+  gem install run_database_backup
 ```
 
 ## Usage
@@ -52,7 +52,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/nemuba/database_backup.
+Bug reports and pull requests are welcome on GitHub at <https://github.com/nemuba/run_database_backup>.
 
 ## License
 

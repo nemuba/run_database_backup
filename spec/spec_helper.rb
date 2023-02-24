@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "database_backup"
+require "run_database_backup"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

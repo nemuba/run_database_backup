@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "database_backup"
+require "run_database_backup"
 
 namespace :mongo do
   desc "Backup MongoDB database to a file"
@@ -13,7 +13,7 @@ namespace :mongo do
 
     puts "Backup MongoDB database #{args[:database_name]} started"
 
-    DatabaseBackup::Mongo.new(**args).dump
+    RunDatabaseBackup::Mongo.new(**args).dump
 
     puts "Backup MongoDB database #{args[:database_name]} completed"
   end
@@ -30,7 +30,7 @@ namespace :mysql do
 
     puts "Backup MySQL database #{args[:database_name]} started"
 
-    DatabaseBackup::Mysql.new(**args).dump
+    RunDatabaseBackup::Mysql.new(**args).dump
 
     puts "Backup MySQL database #{args[:database_name]} completed"
   end
@@ -47,7 +47,7 @@ namespace :postgresql do
 
     puts "Backup PostgreSQL database #{args[:database_name]} started"
 
-    DatabaseBackup::Postgresql.new(**args).dump
+    RunDatabaseBackup::Postgresql.new(**args).dump
 
     puts "Backup PostgreSQL database #{args[:database_name]} completed"
   end
